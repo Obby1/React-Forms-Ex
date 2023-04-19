@@ -11,10 +11,6 @@ it("matches snapshot", function() {
     expect(asFragment()).toMatchSnapshot();
   });
 
-test('renders NewBoxForm component', () => {
-  const { asFragment } = render(<NewBoxForm addBox={() => {}} />);
-  expect(asFragment()).toMatchSnapshot();
-});
 
 test('submits entered data', () => {
   const mockAddBox = jest.fn();
